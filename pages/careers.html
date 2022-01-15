@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Contact</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap"
+            rel="stylesheet" />
+    </head>
+
+    <body>
+        <x-header></x-header>
+
+
+        <section class="banners">
+
+            <img src="./img/agriculture-2.jpg" alt="" class="w-full h-72 object-cover" />
+            <div class="caption">
+                <div class="title">Careers</div>
+                <div class="sub-title">Come Work With Us</div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container grid grid-cols-2 gap-4 px-64 py-24 space-y-5 text-sm">
+                <div class="flex flex-col justify-center text-right">
+                    <h3 class="text-xl">Hi, do you want to work with us?</h3>
+                    <h3 class="text-xl mt-5">Fill the form and submit your CV and we will
+                        get in touch with you ASAP! :)</h3>
+
+
+                </div>
+                <form id="career-form" class="flex flex-col space-y-2">
+                    <input type="text" placeholder="Enter your name here..." name="fullname" id="fullname"
+                        class="bg-gray-100 p-5" />
+                    <input type="email" placeholder="Enter your email here..." name="email" id="email"
+                        class="bg-gray-100 p-5" />
+                    <textarea rows="8" class="bg-gray-100 p-5" placeholder="Enter your message here..."></textarea>
+                    <input type="file" name="cv" class="p-5 bg-gray-100" />
+                    <div id="notification" class="hidden bg-green-500 rounded-lg font-light text-sm p-4">Message
+                        submitted
+                        successfully! We will
+                        get back to
+                        you as
+                        soon as
+                        possible.</div>
+                    <button type="submit" class="w-44 rounded p-5 bg-coffee-700 text-white ml-auto">Send</button>
+                </form>
+            </div>
+        </section>
+
+
+
+        <x-footer></x-footer>
+
+    </body>
+
+</html>

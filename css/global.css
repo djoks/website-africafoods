@@ -1,0 +1,79 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  @apply w-screen h-screen m-0 p-0;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.container {
+  @apply w-4/5 h-auto mx-auto px-5;
+}
+
+.section-title {
+  @apply text-coffee-700;
+}
+
+.section-title::after {
+  @apply pt-3 w-1/2 max-w-20 mx-auto border-b border-coffee-700 block;
+  content: "";
+}
+.section-title-left::after {
+  @apply pt-3 w-1/2 max-w-20 border-b border-coffee-700 block;
+  content: "";
+}
+
+.services .item {
+  @apply flex relative shadow-lg;
+}
+
+.services .title {
+  @apply absolute z-20 bottom-0 p-5 bg-black bg-opacity-40 w-full text-white text-sm;
+}
+
+.banners {
+  @apply relative flex items-center justify-center;
+}
+
+.banners .caption {
+  @apply absolute flex flex-col self-center z-20 text-coffee-700;
+}
+
+.banners .caption > .title {
+  @apply bg-white bg-opacity-50 py-2 px-10 text-center text-2xl rounded shadow;
+}
+
+.banners .caption > .sub-title {
+  @apply w-64 mx-auto mt-1 relative inline-block text-center bg-yellow-300 bg-opacity-50 py-2 px-5 text-sm rounded shadow;
+}
+
+.top-nav > .container > a,
+.top-nav > .container > div {
+  @apply text-coffee-700 py-5 cursor-pointer border-l border-white;
+}
+
+.top-nav > .container > a:last-child,
+.top-nav > .container > div:last-child {
+  @apply border-r border-white;
+}
+
+.top-nav > .container > div > .sub-menu {
+  @apply mt-5 hidden w-full flex-col bg-gray-100 absolute z-50 shadow rounded-b;
+}
+
+.top-nav > .container > div > .sub-menu > a {
+  @apply py-3 border-t border-white border-dotted;
+}
+
+.top-nav > .container > div:hover > .sub-menu {
+  @apply flex mt-5;
+}
+
+.top-nav > .container > div:hover > .sub-menu > a {
+  @apply cursor-pointer;
+}
+.top-nav > .container > div:hover > .sub-menu > a:hover {
+  @apply bg-coffee-600 text-white;
+}

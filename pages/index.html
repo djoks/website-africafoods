@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap"
+            rel="stylesheet" />
+    </head>
+
+    <body>
+        <x-header></x-header>
+
+        <section class="banners">
+
+            <img src="./img/home-1.jpg" alt="" class="w-full h-96 object-cover" />
+            <div class="caption">
+                <div class="title">Helping Africa Grow</div>
+                <div class="sub-title">Through Food & Agriculture</div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="w-full container flex flex-col items-center justify-center py-10">
+                <h1 class="section-title text-xl mb-5">Featured Content</h1>
+                <div class="w-full grid grid-cols-2 gap-4 mt-5">
+                    <a href="" class="w-full flex flex-col">
+                        <img src="./img/sustainability.jpg" alt="" class="w-full h-48 object-cover rounded shadow-xl" />
+                        <div class="flex flex-col font-normal text-sm py-3 text-gray-800">
+                            <strong class="text-coffee-700">Sustaining The Land</strong>
+                            Scenes that dominated the headlines this past summer: heat waves across the pacific
+                            northwest, wildfires in Greece, and
+                            super cyclones in the Asia-pacific are somber reminders that our climate is in crisis.
+                        </div>
+                    </a>
+                    <a href="" class="w-full">
+                        <img src="./img/employment.jpg" alt="" class="w-full h-48 object-cover rounded shadow-xl" />
+                        <div class="flex flex-col font-normal text-sm py-3 text-gray-800">
+                            <strong class="text-coffee-700">Employment & Job Creation</strong>
+                            Scenes that dominated the headlines this past summer: heat waves across the pacific
+                            northwest, wildfires in Greece, and
+                            super cyclones in the Asia-pacific are somber reminders that our climate is in crisis.
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="w-full container flex flex-col items-center justify-center py-10">
+                <h1 class="section-title text-xl mb-5">Markets We Serve</h1>
+                <div class="grid grid-cols-3 gap-4">
+                    <a class="item" href="./animal-nutrition.html">
+                        <img src="./img/nutrition.jpg" alt="" class="object-cover rounded">
+                        <span class="title">Animal Nutrition</span>
+                    </a>
+                    <a class="item" href="./meat-and-poultry.html">
+                        <img src="./img/meats.jpg" alt="" class="object-cover rounded">
+                        <span class="title">Meat & Poultry</span>
+                    </a>
+                    <a class="item" href="./pharmaceutical.html">
+                        <img src="./img/pharmaceuticals.jpg" alt="" class="object-cover rounded">
+                        <span class="title">Pharmaceuticals</span>
+                    </a>
+                    <a class="item" href="./agriculture.html">
+                        <img src="./img/agriculture.jpg" alt="" class="object-cover rounded">
+                        <span class="title">Agriculture</span>
+                    </a>
+                    <a class="item" href="http://www.auisystems.com/projects/milikifoods.com/site/">
+                        <img src="./img/food-and-beverage.jpeg" alt="" class="object-cover rounded">
+                        <span class="title">Food & Beverages</span>
+                    </a>
+                    <div class="item">
+                        <div class="w-full h-full bg-gray-100 rounded"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <x-footer></x-footer>
+
+    </body>
+
+</html>
