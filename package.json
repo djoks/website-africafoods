@@ -24,7 +24,7 @@
   },
   "browserslist": "last 3 years",
   "name": "webpack-tailwindcss",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Webpack + TailwindCSS + ESBuild",
   "author": "djoks <contact.djoks@gmail.com>",
   "license": "ISC"
